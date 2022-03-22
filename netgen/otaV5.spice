@@ -1,0 +1,16 @@
+* NGSPICE file created from otaV5.ext - technology: sky130A
+
+.subckt otaV5 Inp Inn Vout Ib cltop Vp Vn
+X0 Vn a_6890_1010# a_6890_750# Vn sky130_fd_pr__nfet_01v8 w=800000u l=4e+06u
+X1 a_7570_1796# Inp a_6890_1010# Vp sky130_fd_pr__pfet_01v8 w=1.7e+06u l=2e+06u
+X2 Vn a_8070_1014# a_8070_1014# Vn sky130_fd_pr__nfet_01v8 w=800000u l=4e+06u
+X3 Vn a_6890_1010# a_6890_1010# Vn sky130_fd_pr__nfet_01v8 w=800000u l=4e+06u
+X4 Vp a_6890_750# Vout Vp sky130_fd_pr__pfet_01v8 w=1.4e+06u l=1e+06u
+X5 Vp Ib a_7570_1796# Vp sky130_fd_pr__pfet_01v8 w=5e+06u l=4e+06u
+X6 cltop Vout sky130_fd_pr__cap_mim_m3_1 l=3.2e+07u w=3.2e+07u
+X7 Vn a_8070_1014# Vout Vn sky130_fd_pr__nfet_01v8 w=800000u l=4e+06u
+X8 Vp a_6890_750# a_6890_750# Vp sky130_fd_pr__pfet_01v8 w=1.4e+06u l=1e+06u
+X9 a_8070_1014# Inn a_7570_1796# Vp sky130_fd_pr__pfet_01v8 w=1.7e+06u l=2e+06u
+X10 Vp Ib Ib Vp sky130_fd_pr__pfet_01v8 w=5e+06u l=4e+06u
+.ends
+

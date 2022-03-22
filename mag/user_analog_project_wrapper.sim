@@ -1,0 +1,77 @@
+| units: 500000 tech: sky130A format: MIT
+x detV2_0/R/a_n35_n1860# io_analog[2] detV2_0/bot_cin vccd2 l=3720 w=70 x=444131 y=570101 sky130_fd_pr__res_xhigh_po
+x io_analog[3] detV2_0/bot_cin l=17400 w=17400 x=424017 y=557583 sky130_fd_pr__cap_mim_m3_1
+x io_analog[2] detV2_0/m2_n40996_n4008# l=17400 w=17400 x=445901 y=557615 sky130_fd_pr__cap_mim_m3_1
+x io_analog[1] detV2_0/bot_cin vccd2 vccd2 l=30 w=4500 x=443041 y=569411 sky130_fd_pr__nfet_01v8
+x otaV5_0/a_6890_1010# otaV5_0/a_6890_750# vccd2 vccd2 l=800 w=160 x=127326 y=543506 sky130_fd_pr__nfet_01v8
+x io_analog[9] otaV5_0/a_6890_1010# otaV5_0/a_7570_1796# vccd2 l=400 w=340 x=127506 y=544552 sky130_fd_pr__pfet_01v8
+x otaV5_0/a_8070_1014# otaV5_0/a_8070_1014# vccd2 vccd2 l=800 w=160 x=128506 y=543770 sky130_fd_pr__nfet_01v8
+x otaV5_0/a_6890_1010# otaV5_0/a_6890_1010# vccd2 vccd2 l=800 w=160 x=127326 y=543766 sky130_fd_pr__nfet_01v8
+x otaV5_0/a_6890_750# io_analog[7] vccd2 vccd2 l=200 w=280 x=129362 y=544542 sky130_fd_pr__pfet_01v8
+x io_analog[10] otaV5_0/a_7570_1796# vccd2 vccd2 l=800 w=1000 x=128006 y=545066 sky130_fd_pr__pfet_01v8
+x vssa2 io_analog[7] l=6400 w=6400 x=130880 y=541763 sky130_fd_pr__cap_mim_m3_1
+x otaV5_0/a_8070_1014# io_analog[7] vccd2 vccd2 l=800 w=160 x=128506 y=543510 sky130_fd_pr__nfet_01v8
+x otaV5_0/a_6890_750# otaV5_0/a_6890_750# vccd2 vccd2 l=200 w=280 x=129362 y=544922 sky130_fd_pr__pfet_01v8
+x io_analog[8] otaV5_0/a_7570_1796# otaV5_0/a_8070_1014# vccd2 l=400 w=340 x=128006 y=544552 sky130_fd_pr__pfet_01v8
+x io_analog[10] io_analog[10] vccd2 vccd2 l=800 w=1000 x=128006 y=546206 sky130_fd_pr__pfet_01v8
+C io_analog[7] vssa2 15.92
+C detV2_0/m2_n40996_n4008# io_analog[2] 103.09
+C io_analog[3] detV2_0/bot_cin 95.62
+C io_analog[8] io_analog[10] 2.34
+C io_analog[4] GND 25.05
+C io_analog[5] GND 25.05
+C io_analog[6] GND 25.05
+C vssa1 GND 26.08
+C vssd2 GND 13.04
+C vssd1 GND 13.04
+C vdda2 GND 13.04
+C vdda1 GND 26.08
+C vccd1 GND 13.04
+C io_clamp_high[0] GND 3.58
+C io_clamp_low[0] GND 3.58
+C io_clamp_high[1] GND 3.58
+C io_clamp_low[1] GND 3.58
+C io_clamp_high[2] GND 3.58
+C io_clamp_low[2] GND 3.58
+R vccd2 22581
+= vccd2 otaV5_0/Vp
+= vccd2 io_analog[0]
+= vccd2 detV2_0/R/VSUBS
+= vccd2 detV2_0/a_n45830_n11880#
+= vccd2 otaV5_0/Vn
+= vccd2 VSUBS
+C vssa2 GND 109.86
+= vssa2 otaV5_0/cltop
+C io_analog[7] GND 154.17
+R io_analog[7] 1042
+= io_analog[7] otaV5_0/Vout
+C io_analog[8] GND 124.54
+R io_analog[8] 436
+= io_analog[8] otaV5_0/Inn
+C io_analog[9] GND 231.73
+R io_analog[9] 458
+= io_analog[9] otaV5_0/Inp
+C io_analog[10] GND 186.71
+R io_analog[10] 2547
+= io_analog[10] otaV5_0/Ib
+C otaV5_0/a_8070_1014# GND 2.46
+R otaV5_0/a_8070_1014# 1158
+C otaV5_0/a_6890_1010# GND 2.62
+R otaV5_0/a_6890_1010# 1190
+C otaV5_0/a_6890_750# GND 2.45
+R otaV5_0/a_6890_750# 1244
+R otaV5_0/a_7570_1796# 3150
+C io_analog[3] GND 156.14
+= io_analog[3] detV2_0/din
+C io_analog[1] GND 313.30
+R io_analog[1] 7829
+= io_analog[1] detV2_0/db
+C detV2_0/m2_n40996_n4008# GND 114.20
+C io_analog[2] GND 181.40
+R io_analog[2] 188
+= io_analog[2] detV2_0/do
+= io_analog[2] detV2_0/R/a_n35_n2292#
+R detV2_0/R/a_n35_n1860# 106286
+C detV2_0/bot_cin GND 113.90
+R detV2_0/bot_cin 4575
+= detV2_0/bot_cin detV2_0/R/a_n35_1860#

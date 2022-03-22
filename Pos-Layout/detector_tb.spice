@@ -3,16 +3,15 @@
 
 .LIB /edatools/pdks/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt
 .INCLUDE /home/wisla/sky130_skel/Myschematics/Receptor/askMod.spice
-.INCLUDE /home/wisla/sky130_skel/Myschematics/Receptor/my_chip/xschem/detector.spice
+.INCLUDE /home/wisla/sky130_skel/Myschematics/Receptor/my_chip/Pos-Layout/detV2.spice
 
 * CALL SUBCIRCUIT
-Xdet din db do GND detector
+Xdet din db do GND detV2
 Xask din GND askMod
 Vb db GND 1
 
-.TRAN 1p 250n
 .CONTROL
-  run
+  TRAN 1p 250n
   plot v(din)
   plot v(do)
 .ENDC

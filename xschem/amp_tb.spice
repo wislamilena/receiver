@@ -1,0 +1,70 @@
+*******************************************
+.TITLE amplifier test bench 
+
+.lib /edatools/pdks/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt
+.INCLUDE /home/wisla/sky130_skel/Myschematics/Receptor/ampResistor.spice
+.INCLUDE /home/wisla/sky130_skel/Myschematics/Receptor/my_chip/Pos-Layout/otapos.spice
+**.INCLUDE /home/wisla/sky130_skel/Myschematics/Receptor/Layout/ResistorV7.spice
+
+* ===============  SUBCIRCUIT =================
+
+*Xota inp inn vout Vp Vn ib OTA 
+Xota GND inn vout ib Vp Vn OTA 
+
+** negative feedback
+XRn   vout inn resistor ; resistor subcircuit - rd rs
+XC2n  vout inn sky130_fd_pr__cap_mim_m3_1 W=7 L=7 MF=1 m=1
+
+******
+Ib ib GND 1.5u  ; Ibias
+Vp Vp GND 1.8 ; positive power.
+Vn GND Vn 1.8 ; negative power
+
+* *************  GAIN Simulation *************
+
+Vinn inn GND dc 0 ac 1
+
+.CONTROL
+ ac DEC 10 0.01 10E6
+ settype decibel vout
+ plot db(vout) ylabel 'Gain(dB)'
+ 
+ settype phase vout
+ let voutd = 180/PI*cph(vout)
+ settype phase voutd
+ plot voutd ylabel 'phase'
+.ENDC
+
+
+* *************  transient *************
+
+*Vinn in0 GND SIN(0 10m 1e3)
+*.tran 1u 50m
+
+*.CONTROL
+* run 
+* plot inn
+* plot vout
+* plot inn vout
+*.ENDC
+
+************************ NOISE **********************************
+* Vinn in0 GND dc 0 ac 1
+*.NOISE V(vout) Vinn DEC 10 10E-3 10E4
+
+*.control
+* listing
+* run
+* write rlcnoisean.raw
+* print V(inoise_total) V(onoise_total)
+* write rlcnoiseanall.raw noise1.all noise2.all
+
+* setplot noise1
+* plot onoise_spectrum ylog xlog ylabel 'log'
+* plot onoise_spectrum 
+* plot inoise_spectrum
+*.endc
+
+.GLOBAL GND
+.END
+
