@@ -1,0 +1,24 @@
+2022-03-23 16:40:33 - [INFO] - {{EXTRACTING FILES}} Extracting compressed files in: /home/wisla/sky130_skel/Myschematics/Receptor/receiver
+2022-03-23 16:40:33 - [INFO] - {{Project Type Info}} analog
+2022-03-23 16:40:33 - [INFO] - {{Project GDS Info}} user_analog_project_wrapper: 684d08d407dd129f69dfd4a6f5abfbebcd9a7d69
+2022-03-23 16:40:34 - [INFO] - {{Tools Info}} KLayout: v0.27.8 | Magic: v8.3.274
+2022-03-23 16:40:34 - [INFO] - {{PDKs Info}} Open PDKs: 32cdb2097fd9a629c91e8ea33e1f6de08ab25946 | Skywater PDK: f70d8ca46961ff92719d8870a18a076370b85f6c
+2022-03-23 16:40:34 - [INFO] - {{START}} Precheck Started, the full log 'precheck.log' will be located in '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/precheck_results/23_MAR_2022___16_40_33/logs'
+2022-03-23 16:40:34 - [INFO] - {{PRECHECK SEQUENCE}} Precheck will run the following checks: [License, Makefile, Default, Documentation, Consistency, XOR, Magic DRC, Klayout FEOL, Klayout BEOL, Klayout Offgrid, Klayout Metal Minimum Clear Area Density, Klayout Pin Label Purposes Overlapping Drawing, Klayout ZeroArea]
+2022-03-23 16:40:34 - [INFO] - {{STEP UPDATE}} Executing Check 1 of 13: License
+2022-03-23 16:40:35 - [INFO] - An approved LICENSE (Apache-2.0) was found in /home/wisla/sky130_skel/Myschematics/Receptor/receiver.
+2022-03-23 16:40:35 - [INFO] - {{MAIN LICENSE CHECK PASSED}} An approved LICENSE was found in project root.
+2022-03-23 16:40:36 - [INFO] - An approved LICENSE (Apache-2.0) was found in /home/wisla/sky130_skel/Myschematics/Receptor/receiver.
+2022-03-23 16:40:37 - [INFO] - An approved LICENSE (Apache-2.0) was found in /home/wisla/sky130_skel/Myschematics/Receptor/receiver.
+2022-03-23 16:40:37 - [INFO] - {{SUBMODULES LICENSE CHECK PASSED}} No prohibited LICENSE file(s) was found in project submodules
+2022-03-23 16:40:37 - [WARNING] - {{SPDX COMPLIANCE CHECK FAILED}} Found 32 non-compliant file(s) with the SPDX Standard.
+2022-03-23 16:40:37 - [INFO] - SPDX COMPLIANCE: NON-COMPLIANT FILE(S) PREVIEW: ['/home/wisla/sky130_skel/Myschematics/Receptor/receiver/Makefile', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/docs/Makefile', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/docs/environment.yml', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/docs/source/conf.py', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/docs/source/index.rst', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/netgen/run_lvs_por.sh', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/netgen/run_lvs_wrapper_xschem.sh', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/netgen/setup.tcl', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/netgen/run_lvs_ota.sh', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/.spiceinit', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/analog_wrapper_tb.sch', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/user_analog_project_wrapper.sch', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/user_analog_project_wrapper.sym', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/xschemrc', '/home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/detector.sch']
+2022-03-23 16:40:37 - [INFO] - For the full SPDX compliance report check: /home/wisla/sky130_skel/Myschematics/Receptor/receiver/precheck_results/23_MAR_2022___16_40_33/logs/spdx_compliance_report.log
+2022-03-23 16:40:37 - [INFO] - {{STEP UPDATE}} Executing Check 2 of 13: Makefile
+2022-03-23 16:40:37 - [INFO] - {{MAKEFILE CHECK PASSED}} Makefile valid.
+2022-03-23 16:40:37 - [INFO] - {{STEP UPDATE}} Executing Check 3 of 13: Default
+2022-03-23 16:40:37 - [INFO] - {{README DEFAULT CHECK PASSED}} Project 'README.md' was modified and is not identical to the default 'README.md'
+2022-03-23 16:40:37 - [INFO] - {{CONTENT DEFAULT CHECK PASSED}} Project 'gds' was modified and is not identical to the default 'gds'
+2022-03-23 16:40:37 - [INFO] - {{STEP UPDATE}} Executing Check 4 of 13: Documentation
+2022-03-23 16:40:37 - [INFO] - {{DOCUMENTATION CHECK PASSED}} Project documentation is appropriate.
+2022-03-23 16:40:37 - [INFO] - {{STEP UPDATE}} Executing Check 5 of 13: Consistency
