@@ -1,0 +1,31 @@
+| units: 500000 tech: sky130A format: MIT
+x a_6890_1010# a_6890_750# Vn Vn l=800 w=160 x=6990 y=750 sky130_fd_pr__nfet_01v8
+x Inp a_6890_1010# a_7570_1796# Vp l=400 w=340 x=7170 y=1796 sky130_fd_pr__pfet_01v8
+x a_8070_1014# a_8070_1014# Vn Vn l=800 w=160 x=8170 y=1014 sky130_fd_pr__nfet_01v8
+x a_6890_1010# a_6890_1010# Vn Vn l=800 w=160 x=6990 y=1010 sky130_fd_pr__nfet_01v8
+x a_6890_750# Vout Vp Vp l=200 w=280 x=9026 y=1786 sky130_fd_pr__pfet_01v8
+x Ib a_7570_1796# Vp Vp l=800 w=1000 x=7670 y=2310 sky130_fd_pr__pfet_01v8
+x cltop Vout l=6400 w=6400 x=10544 y=-993 sky130_fd_pr__cap_mim_m3_1
+x a_8070_1014# Vout Vn Vn l=800 w=160 x=8170 y=754 sky130_fd_pr__nfet_01v8
+x a_6890_750# a_6890_750# Vp Vp l=200 w=280 x=9026 y=2166 sky130_fd_pr__pfet_01v8
+x Inn a_7570_1796# a_8070_1014# Vp l=400 w=340 x=7670 y=1796 sky130_fd_pr__pfet_01v8
+x Ib Ib Vp Vp l=800 w=1000 x=7670 y=3450 sky130_fd_pr__pfet_01v8
+C Vout cltop 15.92
+C Vout GND 28.64
+R Vout 1035
+C Inn GND 2.75
+R Inn 423
+C Inp GND 7.19
+R Inp 432
+C Ib GND 7.73
+R Ib 2537
+C Vp GND 31.12
+R Vp 10161
+R Vn 2408
+C a_8070_1014# GND 2.45
+R a_8070_1014# 1158
+C a_6890_1010# GND 2.61
+R a_6890_1010# 1190
+C a_6890_750# GND 2.36
+R a_6890_750# 1244
+R a_7570_1796# 3150

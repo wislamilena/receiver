@@ -1,0 +1,37 @@
+* SPICE3 file created from detV2.ext - technology: sky130A
+
+.option scale=5000u
+
+.subckt detV2 din db do gnd vbody
+X0 do bot_cin vbody sky130_fd_pr__res_xhigh_po w=70 l=3720
+X1 din.t0 bot_cin.t1 sky130_fd_pr__cap_mim_m3_1 l=17400 w=17400
+X2 do.t0 m2_n40996_n4008# sky130_fd_pr__cap_mim_m3_1 l=17400 w=17400
+X3 gnd.t0 db.t0 bot_cin.t0 vbody sky130_fd_pr__nfet_01v8 w=4500 l=30
+C0 m2_n40996_n4008# do 103.09fF
+C1 db gnd 0.01fF
+C2 m2_n40996_n4008# gnd 5.56fF
+C3 db bot_cin 0.01fF
+C4 din bot_cin 95.62fF
+C5 bot_cin gnd 0.95fF
+R0 do do.t0 0.06
+R1 bot_cin.n0 bot_cin.t0 2006.05
+R2 bot_cin bot_cin.n0 0.066
+R3 bot_cin bot_cin.t1 0.054
+R4 bot_cin.n0 bot_cin 0.01
+R5 din din.t0 0.058
+R6 db db.t0 4116.63
+R7 gnd gnd.t0 2146.55
+C6 din vbody 12.99fF
+C7 gnd vbody 43.12fF
+C8 db vbody 32.70fF
+C9 m2_n40996_n4008# vbody 108.64fF **FLOATING
+C10 gnd.t0 vbody 0.84fF **FLOATING
+C11 db.t0 vbody 0.79fF **FLOATING
+C12 din.t0 vbody 93.50fF **FLOATING
+C13 bot_cin.t1 vbody 184.49fF **FLOATING
+C14 bot_cin.t0 vbody 0.37fF **FLOATING
+C15 bot_cin.n0 vbody 2.44fF
+C16 do.t0 vbody 111.16fF **FLOATING
+C17 do vbody 37.99fF
+C18 bot_cin vbody 136.13fF **FLOATING
+.ends

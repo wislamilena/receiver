@@ -25,21 +25,16 @@ N 500 200 540 200 { lab=#net3}
 N 230 150 230 200 { lab=#net2}
 N 60 -90 120 -90 { lab=#net1}
 N 120 -140 120 -90 { lab=#net1}
-N 60 230 60 280 { lab=Vn}
-N 60 280 580 280 { lab=Vn}
-N 580 230 580 280 { lab=Vn}
-N 300 230 300 280 { lab=Vn}
-N 460 230 460 280 { lab=Vn}
-N 300 200 330 200 { lab=Vn}
-N 330 200 330 280 { lab=Vn}
-N 430 200 460 200 { lab=Vn}
-N 430 200 430 280 { lab=Vn}
-N 20 200 60 200 { lab=Vn}
-N 20 200 20 280 { lab=Vn}
-N 20 280 60 280 { lab=Vn}
-N 580 200 610 200 { lab=Vn}
-N 610 200 610 280 { lab=Vn}
-N 580 280 610 280 { lab=Vn}
+N 60 230 60 280 { lab=#net4}
+N 60 280 580 280 { lab=#net4}
+N 580 230 580 280 { lab=#net4}
+N 300 230 300 280 { lab=#net4}
+N 460 230 460 280 { lab=#net4}
+N 300 200 330 200 { lab=#net4}
+N 430 200 460 200 { lab=#net4}
+N 20 200 60 200 { lab=#net4}
+N 20 200 20 280 { lab=#net4}
+N 580 200 610 200 { lab=#net4}
 N 580 -140 620 -140 { lab=Vp}
 N 620 -200 620 -140 { lab=Vp}
 N 580 -200 620 -200 { lab=Vp}
@@ -50,11 +45,11 @@ N 300 100 320 100 { lab=Vp}
 N 440 100 460 100 { lab=Vp}
 N 320 100 350 100 { lab=Vp}
 N 350 100 440 100 { lab=Vp}
-N 330 10 330 50 { lab=#net4}
-N 300 50 330 50 { lab=#net4}
-N 300 50 300 70 { lab=#net4}
-N 330 50 460 50 { lab=#net4}
-N 460 50 460 70 { lab=#net4}
+N 330 10 330 50 { lab=#net5}
+N 300 50 330 50 { lab=#net5}
+N 300 50 300 70 { lab=#net5}
+N 330 50 460 50 { lab=#net5}
+N 460 50 460 70 { lab=#net5}
 N 300 130 300 170 { lab=#net2}
 N 230 150 300 150 { lab=#net2}
 N 460 130 460 150 { lab=#net3}
@@ -66,7 +61,7 @@ N 500 100 520 100 { lab=inn}
 N 580 20 650 20 { lab=vout}
 N 170 -200 170 -50 { lab=Vp}
 N 330 -200 330 -50 { lab=Vp}
-N 370 280 370 300 { lab=Vn}
+N 370 280 370 300 { lab=#net4}
 N 170 10 170 40 { lab=ib}
 N 280 -230 280 -200 { lab=Vp}
 N 420 -200 420 100 {
@@ -75,6 +70,16 @@ N 580 90 610 90 {
 lab=vout}
 N 670 90 680 90 {
 lab=cltop}
+N 610 200 610 280 {
+lab=#net4}
+N 580 280 610 280 {
+lab=#net4}
+N 430 200 430 280 {
+lab=#net4}
+N 330 200 330 280 {
+lab=#net4}
+N 20 280 60 280 {
+lab=#net4}
 C {/home/wisla/sky130_skel/xschem_sky130/sky130_fd_pr/pfet_01v8.sym} 80 -140 0 1 {name=M7
 L=1
 W=1.4
@@ -218,8 +223,8 @@ spiceprefix=X
 C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} 250 100 0 0 {name=p3 lab=inp}
 C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} 510 100 0 1 {name=p4 lab=inn}
 C {/edatools/opentools/xschem/xschem_library/devices/opin.sym} 650 20 0 0 {name=p1 lab=vout}
-C {/edatools/opentools/xschem/xschem_library/devices/iopin.sym} 280 -220 3 0 {name=p2 lab=Vp}
-C {/edatools/opentools/xschem/xschem_library/devices/iopin.sym} 370 300 1 0 {name=p5 lab=Vn}
 C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} 170 30 3 0 {name=p6 lab=ib}
 C {/home/wisla/sky130_skel/xschem_sky130/sky130_fd_pr/cap_mim_m3_1.sym} 640 90 1 0 {name=C1 model=cap_mim_m3_1 W=32 L=32 MF=1 spiceprefix=X}
 C {/edatools/opentools/xschem/xschem_library/devices/opin.sym} 680 90 0 0 {name=p7 lab=cltop}
+C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} 280 -220 3 1 {name=p2 lab=Vp}
+C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} 370 290 1 1 {name=p5 lab=Vn}

@@ -43,7 +43,7 @@ sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)
 sky130_fd_pr__cap_mim_m3_1 (2)             |sky130_fd_pr__cap_mim_m3_1 (2)             
 sky130_fd_pr__res_xhigh_po (1)             |sky130_fd_pr__res_xhigh_po (1)             
 Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 6                          |Number of nets: 6                          
+Number of nets: 5                          |Number of nets: 5                          
 ---------------------------------------------------------------------------------------
 Circuits match uniquely.
 Netlists match uniquely.
@@ -52,7 +52,6 @@ Subcircuit pins:
 Circuit 1: detector                        |Circuit 2: detV2                           
 -------------------------------------------|-------------------------------------------
 do                                         |do                                         
-Vsub                                       |vbody **Mismatch**                         
 gnd                                        |gnd                                        
 din                                        |din                                        
 dB                                         |db                                         

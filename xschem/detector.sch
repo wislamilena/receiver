@@ -4,24 +4,23 @@ K {}
 V {}
 S {}
 E {}
-N 130 90 130 110 { lab=#net1}
-N 130 110 130 140 { lab=#net1}
-N 130 60 220 60 { lab=#net1}
-N 220 60 220 120 { lab=#net1}
-N 130 120 220 120 { lab=#net1}
-N 130 -10 130 30 { lab=#net2}
-N 350 110 350 140 { lab=#net1}
+N 130 90 130 110 { lab=gnd}
+N 130 110 130 140 { lab=gnd}
+N 130 -10 130 30 { lab=#net1}
+N 350 110 350 140 { lab=gnd}
 N 350 -10 350 50 { lab=do}
 N -50 -10 -10 -10 { lab=din}
 N 350 -10 410 -10 { lab=do}
 N 50 60 90 60 { lab=dB}
-N 130 140 350 140 { lab=#net1}
-N 240 140 240 160 { lab=#net1}
-N 50 -10 130 -10 { lab=#net2}
-N 130 -10 200 -10 { lab=#net2}
+N 130 140 350 140 { lab=gnd}
+N 240 140 240 160 { lab=gnd}
+N 50 -10 130 -10 { lab=#net1}
+N 130 -10 200 -10 { lab=#net1}
 N 260 -10 350 -10 { lab=do}
-N 230 10 230 80 { lab=#net1}
-N 220 80 230 80 { lab=#net1}
+N 130 60 260 60 {
+lab=gnd}
+N 230 10 230 60 {
+lab=gnd}
 C {/home/wisla/sky130_skel/xschem_sky130/sky130_fd_pr/nfet_01v8.sym} 110 60 0 0 {name=M1
 L=0.15
 W=22.5
@@ -48,3 +47,4 @@ model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} 240 150 3 0 {name=p4 lab=gnd}
+C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} 250 60 2 0 {name=p5 lab=Vsub}

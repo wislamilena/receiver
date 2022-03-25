@@ -1,0 +1,111 @@
+* SPICE3 file created from otaV5.ext - technology: sky130A
+
+.subckt otaV5 Inp Inn Vout Ib cltop Vp Vn
+X0 Vn.t3 a_6890_1010.t3 a_6890_750.t0 Vn sky130_fd_pr__nfet_01v8 w=800000u l=4e+06u
+X1 a_7570_1796# Inp.t0 a_6890_1010.t0 Vp.t0 sky130_fd_pr__pfet_01v8 w=1.7e+06u l=2e+06u
+X2 Vn.t0 a_8070_1014.t1 a_8070_1014.t2 Vn sky130_fd_pr__nfet_01v8 w=800000u l=4e+06u
+X3 Vn.t2 a_6890_1010.t1 a_6890_1010.t2 Vn sky130_fd_pr__nfet_01v8 w=800000u l=4e+06u
+X4 Vp.t7 a_6890_750.t3 Vout.t2 Vp.t5 sky130_fd_pr__pfet_01v8 w=1.4e+06u l=1e+06u
+X5 Vp.t3 Ib.t2 a_7570_1796# Vp.t2 sky130_fd_pr__pfet_01v8 w=5e+06u l=4e+06u
+X6 cltop.t0 Vout.t0 sky130_fd_pr__cap_mim_m3_1 l=3.2e+07u w=3.2e+07u
+X7 Vn.t1 a_8070_1014.t3 Vout.t1 Vn sky130_fd_pr__nfet_01v8 w=800000u l=4e+06u
+X8 Vp.t6 a_6890_750.t1 a_6890_750.t2 Vp.t5 sky130_fd_pr__pfet_01v8 w=1.4e+06u l=1e+06u
+X9 a_8070_1014.t0 Inn.t0 a_7570_1796# Vp.t1 sky130_fd_pr__pfet_01v8 w=1.7e+06u l=2e+06u
+X10 Vp.t4 Ib.t0 Ib.t1 Vp.t2 sky130_fd_pr__pfet_01v8 w=5e+06u l=4e+06u
+C0 cltop Vout 15.92fF
+C1 a_7570_1796# Vp 0.01fF
+C2 Ib Inp 0.08fF
+C3 Ib Vp 0.27fF
+C4 Vout Vp 0.03fF
+C5 Ib Inn 0.11fF
+C6 Inp Vp 0.17fF
+C7 Inn Inp 0.37fF
+R0 a_6890_1010.t0 a_6890_1010.n0 195.921
+R1 a_6890_1010.n0 a_6890_1010.t1 92.645
+R2 a_6890_1010.n0 a_6890_1010.t2 69.562
+R3 a_6890_1010.t1 a_6890_1010.t3 10.845
+R4 a_6890_750.n0 a_6890_750.t1 207.335
+R5 a_6890_750.t1 a_6890_750.t3 91.58
+R6 a_6890_750.n0 a_6890_750.t0 80.953
+R7 a_6890_750.t2 a_6890_750.n0 63.038
+R8 Vn.n1 Vn.t2 84.412
+R9 Vn.n2 Vn.n0 65.938
+R10 Vn.n0 Vn.t0 65.166
+R11 Vn.n2 Vn.n1 63.208
+R12 Vn.n0 Vn.t1 38.25
+R13 Vn.n1 Vn.t3 38.25
+R14 Vn Vn.n2 0.006
+R15 Inp Inp.t0 27.195
+R16 Vp.t4 Vp.t3 1799.51
+R17 Vp.n2 Vp.n1 722.838
+R18 Vp.n2 Vp.t6 598.495
+R19 Vp.t6 Vp.t7 434.506
+R20 Vp.n0 Vp.t2 322.249
+R21 Vp.n0 Vp.t5 306.762
+R22 Vp.t1 Vp.t0 297.827
+R23 Vp.n1 Vp.t4 197
+R24 Vp.t2 Vp.t1 119.131
+R25 Vp.n1 Vp.n0 3.566
+R26 Vp Vp.n2 0.145
+R27 a_8070_1014.t0 a_8070_1014.n0 304.285
+R28 a_8070_1014.n0 a_8070_1014.t1 85.41
+R29 a_8070_1014.n0 a_8070_1014.t2 59.814
+R30 a_8070_1014.t1 a_8070_1014.t3 10.845
+R31 Vout.n0 Vout.t2 210.109
+R32 Vout.n0 Vout.t0 166.261
+R33 Vout.n1 Vout.t1 56.397
+R34 Vout Vout.n1 0.067
+R35 Vout.n1 Vout.n0 0.001
+R36 Ib Ib.t1 840.712
+R37 Ib Ib.t0 84.078
+R38 Ib.t0 Ib.t2 68.685
+R39 cltop cltop.t0 0.054
+R40 Inn.n0 Inn.t0 20.485
+R41 Inn.n0 Inn 4.357
+R42 Inn Inn.n0 2.614
+C8 cltop Vn 1.92fF
+C9 Vout Vn 28.65fF
+C10 Inn Vn 4.79fF
+C11 Inp Vn 14.07fF
+C12 Ib Vn 10.62fF
+C13 Vp Vn 31.90fF
+C14 a_7570_1796# Vn 0.10fF **FLOATING
+C15 Inn.t0 Vn 0.37fF **FLOATING
+C16 Inn.n0 Vn 0.34fF
+C17 cltop.t0 Vn 15.13fF **FLOATING
+C18 Ib.t2 Vn 1.68fF **FLOATING
+C19 Ib.t0 Vn 3.02fF **FLOATING
+C20 Ib.t1 Vn 0.15fF **FLOATING
+C21 Vout.t1 Vn 0.02fF **FLOATING
+C22 Vout.t2 Vn 0.03fF **FLOATING
+C23 Vout.t0 Vn 44.31fF **FLOATING
+C24 Vout.n0 Vn 0.05fF
+C25 Vout.n1 Vn 0.15fF
+C26 a_8070_1014.t3 Vn 0.51fF **FLOATING
+C27 a_8070_1014.t1 Vn 1.00fF **FLOATING
+C28 a_8070_1014.t2 Vn 0.06fF **FLOATING
+C29 a_8070_1014.n0 Vn 0.71fF
+C30 a_8070_1014.t0 Vn 0.17fF **FLOATING
+C31 Vp.t7 Vn 0.14fF **FLOATING
+C32 Vp.t6 Vn 0.36fF **FLOATING
+C33 Vp.t0 Vn 6.43fF **FLOATING
+C34 Vp.t1 Vn 3.74fF **FLOATING
+C35 Vp.t2 Vn 3.96fF **FLOATING
+C36 Vp.t5 Vn 6.25fF **FLOATING
+C37 Vp.n0 Vn 6.08fF
+C38 Vp.t3 Vn 0.42fF **FLOATING
+C39 Vp.t4 Vn 0.25fF **FLOATING
+C40 Vp.n1 Vn 0.17fF
+C41 Vp.n2 Vn 2.55fF
+C42 Inp.t0 Vn 0.31fF **FLOATING
+C43 a_6890_750.t3 Vn 0.30fF **FLOATING
+C44 a_6890_750.t1 Vn 0.45fF **FLOATING
+C45 a_6890_750.t0 Vn 0.42fF **FLOATING
+C46 a_6890_750.n0 Vn 1.08fF
+C47 a_6890_750.t2 Vn 0.10fF **FLOATING
+C48 a_6890_1010.t2 Vn 0.06fF **FLOATING
+C49 a_6890_1010.t3 Vn 0.52fF **FLOATING
+C50 a_6890_1010.t1 Vn 1.21fF **FLOATING
+C51 a_6890_1010.n0 Vn 0.66fF
+C52 a_6890_1010.t0 Vn 0.16fF **FLOATING
+.ends

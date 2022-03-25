@@ -1,16 +1,16 @@
-Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_HDW2JU in circuit detV2 (1)(1 instance)
-Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po has no definition, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: sky130_fd_pr__res_xhigh_po      |Circuit 2: sky130_fd_pr__res_xhigh_po      
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
 -------------------------------------------|-------------------------------------------
 1                                          |1                                          
 2                                          |2                                          
 3                                          |3                                          
+4                                          |4                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sky130_fd_pr__res_xhigh_po and sky130_fd_pr__res_xhigh_po are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
 
@@ -37,26 +37,28 @@ Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
 
 Subcircuit summary:
-Circuit 1: detector                        |Circuit 2: detV2                           
+Circuit 1: OTA                             |Circuit 2: otaV5                           
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
-sky130_fd_pr__cap_mim_m3_1 (2)             |sky130_fd_pr__cap_mim_m3_1 (2)             
-sky130_fd_pr__res_xhigh_po (1)             |sky130_fd_pr__res_xhigh_po (1)             
-Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 6                          |Number of nets: 6                          
+sky130_fd_pr__pfet_01v8 (6)                |sky130_fd_pr__pfet_01v8 (6)                
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 11                      |Number of devices: 11                      
+Number of nets: 11                         |Number of nets: 11                         
 ---------------------------------------------------------------------------------------
 Circuits match uniquely.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: detector                        |Circuit 2: detV2                           
+Circuit 1: OTA                             |Circuit 2: otaV5                           
 -------------------------------------------|-------------------------------------------
-do                                         |do                                         
-Vsub                                       |vbody **Mismatch**                         
-gnd                                        |gnd                                        
-din                                        |din                                        
-dB                                         |db                                         
+Vn                                         |Vn                                         
+cltop                                      |cltop                                      
+inn                                        |Inn                                        
+inp                                        |Inp                                        
+vout                                       |Vout                                       
+ib                                         |Ib                                         
+Vp                                         |Vp                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes detector and detV2 are equivalent.
+Device classes OTA and otaV5 are equivalent.
 Circuits match uniquely.

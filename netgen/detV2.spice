@@ -4,10 +4,10 @@
 X0 a_n35_n2292# a_n35_1860# VSUBS sky130_fd_pr__res_xhigh_po w=350000u l=1.86e+07u
 .ends
 
-.subckt detV2 din db do gnd
-XR bot_cin do gnd sky130_fd_pr__res_xhigh_po_0p35_HDW2JU
+.subckt detV2 din db do gnd vbody
+XR bot_cin do vbody sky130_fd_pr__res_xhigh_po_0p35_HDW2JU
 X0 din bot_cin sky130_fd_pr__cap_mim_m3_1 l=8.7e+07u w=8.7e+07u
 X1 do gnd sky130_fd_pr__cap_mim_m3_1 l=8.7e+07u w=8.7e+07u
-X2 gnd db bot_cin gnd sky130_fd_pr__nfet_01v8 w=2.25e+07u l=150000u
+X2 gnd db bot_cin vbody sky130_fd_pr__nfet_01v8 w=2.25e+07u l=150000u
 .ends
 

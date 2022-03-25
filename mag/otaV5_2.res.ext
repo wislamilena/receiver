@@ -1,0 +1,116 @@
+scale 1000 1 500000
+rnode "Inn.t0" 0 373.666 7870 1966 0
+rnode "Inn" 0 2008.41 7710 1650 0
+rnode "Inn.n0" 0 339.216 7770 1700 0
+rnode "Inn" 0 28.7085 7769 1730 0
+resist "Inn" "Inn.n0" 2.614
+resist "Inn.n0" "Inn" 4.357
+resist "Inn.n0" "Inn.t0" 20.485
+rnode "cltop.t0" 0 15132.5 15624 2208 0
+rnode "cltop" 0 787.546 17958 2182 0
+resist "cltop" "cltop.t0" 0.054
+rnode "Ib.t0" 0 1680.59 8070 2810 0
+rnode "Ib.n0" 0 3017.23 8070 3950 0
+rnode "Ib.n1" 0 145.589 7670 3950 0
+rnode "Ib" 0 2886.59 7584 4396 0
+resist "Ib.n0" "Ib.t0" 68.685
+resist "Ib" "Ib.n0" 84.078
+resist "Ib" "Ib.n1" 840.712
+rnode "Vout.t2" 0 18.3961 8170 834 0
+rnode "Vout.t0" 0 25.2525 9026 1926 0
+rnode "Vout.t1" 0 44306.3 13744 2206 0
+rnode "Vout.n0" 0 54.7708 8975 1681 0
+rnode "Vout.n1" 0 152.603 8975 1681 0
+rnode "Vout" 0 2.71451 8932 1650 0
+resist "Vout.n1" "Vout.n0" 0.0005
+resist "Vout" "Vout.n1" 0.067
+resist "Vout.n1" "Vout.t2" 56.3965
+resist "Vout.n0" "Vout.t1" 166.261
+resist "Vout.n0" "Vout.t0" 210.109
+killnode "a_8070_1014#"
+rnode "a_8070_1014.t3" 0 507.368 8570 834 0
+rnode "a_8070_1014.t1" 0 997.93 8570 1094 0
+rnode "a_8070_1014.t2" 0 62.9548 8170 1094 0
+rnode "a_8070_1014.n0" 0 713.865 8158 1270 0
+rnode "a_8070_1014.t0" 0 167.883 8070 1966 0
+resist "a_8070_1014.t1" "a_8070_1014.t3" 10.845
+resist "a_8070_1014.n0" "a_8070_1014.t2" 59.814
+resist "a_8070_1014.n0" "a_8070_1014.t1" 85.4099
+resist "a_8070_1014.t0" "a_8070_1014.n0" 304.285
+rnode "Vp.t5" 0 139.851 9226 1926 0
+rnode "Vp.t4" 0 364.691 9226 2306 0
+rnode "Vp.t6" 0 6430.51 7370 1966 0
+rnode "Vp.t0" 0 3738.67 7870 1966 0
+rnode "Vp.t1" 0 3957.65 8070 2810 0
+rnode "Vp.t3" 0 6254.26 9126 2306 0
+rnode "Vp.n0" 0 6079.53 8611 4050 0
+rnode "Vp.t2" 0 439.965 8470 2810 0
+rnode "Vp.n1" 0 391.437 8535 4050 0
+rnode "Vp.n2" 0 2546.38 8396 4837 0
+rnode "Vp" 0 777.057 7978 4750 0
+resist "Vp" "Vp.n2" 0.145101
+resist "Vp.n1" "Vp.n0" 3.566
+resist "Vp.t1" "Vp.t0" 119.131
+resist "Vp.t0" "Vp.t6" 297.827
+resist "Vp.n0" "Vp.t3" 306.762
+resist "Vp.n0" "Vp.t1" 322.249
+resist "Vp.t4" "Vp.t5" 434.506
+resist "Vp.n2" "Vp.t4" 598.495
+resist "Vp.n2" "Vp.n1" 722.838
+resist "Vp.n1" "Vp.t2" 1996.51
+killnode "a_7570_1796#"
+rnode "a_7570_1796.t2" 0 0 7570 1966 0
+rnode "a_7570_1796.t0" 0 0 7670 1966 0
+rnode "a_7570_1796.n0" 0 0 7619 2101 0
+rnode "a_7570_1796.t1" 0 0 7670 2810 0
+resist "a_7570_1796.n0" "a_7570_1796.t2" 28.391
+resist "a_7570_1796.n0" "a_7570_1796.t0" 29.55
+resist "a_7570_1796.t1" "a_7570_1796.n0" 873.24
+rnode "Inp.t0" 0 313.979 7370 1966 0
+rnode "Inp" 0 6876.02 7204 1646 0
+resist "Inp" "Inp.t0" 27.195
+rnode "Vn.t1" 0 0 8970 834 0
+rnode "Vn.t0" 0 0 8970 1094 0
+rnode "Vn.n0" 0 0 9021 841 0
+rnode "Vn.t3" 0 0 7790 830 0
+rnode "Vn.t2" 0 0 7790 1090 0
+rnode "Vn.n1" 0 0 7841 821 0
+rnode "Vn.n2" 0 0 7841 452 0
+rnode "Vn" 0 0 7966 236 0
+resist "Vn" "Vn.n2" 0.00592427
+resist "Vn.n1" "Vn.t3" 38.25
+resist "Vn.n0" "Vn.t1" 38.25
+resist "Vn.n2" "Vn.n1" 63.2084
+resist "Vn.n0" "Vn.t0" 65.166
+resist "Vn.n2" "Vn.n0" 65.9382
+resist "Vn.n1" "Vn.t2" 84.412
+killnode "a_6890_750#"
+rnode "a_6890_750.t3" 0 298.147 9126 1926 0
+rnode "a_6890_750.t0" 0 454.2 9126 2306 0
+rnode "a_6890_750.t2" 0 422.304 6990 830 0
+rnode "a_6890_750.n0" 0 1084.84 8847 2294 0
+rnode "a_6890_750.t1" 0 100.51 9026 2306 0
+resist "a_6890_750.t1" "a_6890_750.n0" 63.038
+resist "a_6890_750.n0" "a_6890_750.t2" 80.953
+resist "a_6890_750.t0" "a_6890_750.t3" 91.58
+resist "a_6890_750.n0" "a_6890_750.t0" 207.335
+killnode "a_6890_1010#"
+rnode "a_6890_1010.t2" 0 58.431 6990 1090 0
+rnode "a_6890_1010.t3" 0 516.659 7390 830 0
+rnode "a_6890_1010.t1" 0 1213.34 7390 1090 0
+rnode "a_6890_1010.n0" 0 664.783 6933 1308 0
+rnode "a_6890_1010.t0" 0 156.788 7170 1966 0
+resist "a_6890_1010.t1" "a_6890_1010.t3" 10.845
+resist "a_6890_1010.n0" "a_6890_1010.t2" 69.562
+resist "a_6890_1010.n0" "a_6890_1010.t1" 92.6448
+resist "a_6890_1010.t0" "a_6890_1010.n0" 195.921
+device msubckt sky130_fd_pr__pfet_01v8 7670 1796 7671 1797  "Vp.t0" "Inn.t0" 800 0 "a_7570_1796.t0" 340 0 "a_8070_1014.t0" 340 0
+device msubckt sky130_fd_pr__pfet_01v8 9026 2166 9027 2167  "Vp.t3" "a_6890_750.t0" 400 0 "a_6890_750.t1" 280 0 "Vp.t4" 280 0
+device msubckt sky130_fd_pr__nfet_01v8 8170 754 8171 755  "Vn" "a_8070_1014.t3" 1600 0 "Vout.t2" 160 0 "Vn.t1" 160 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 10544 -994 10545 -993  "None" "cltop.t0" 29600 0 "Vout.t1" -12980 0
+device msubckt sky130_fd_pr__pfet_01v8 7670 2310 7671 2311  "Vp.t1" "Ib.t0" 1600 0 "a_7570_1796.t1" 1000 0 "Vp.t2" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8 9026 1786 9027 1787  "Vp.t3" "a_6890_750.t3" 400 0 "Vout.t0" 280 0 "Vp.t5" 280 0
+device msubckt sky130_fd_pr__nfet_01v8 6990 1010 6991 1011  "Vn" "a_6890_1010.t1" 1600 0 "a_6890_1010.t2" 160 0 "Vn.t2" 160 0
+device msubckt sky130_fd_pr__nfet_01v8 8170 1014 8171 1015  "Vn" "a_8070_1014.t1" 1600 0 "a_8070_1014.t2" 160 0 "Vn.t0" 160 0
+device msubckt sky130_fd_pr__pfet_01v8 7170 1796 7171 1797  "Vp.t6" "Inp.t0" 800 0 "a_6890_1010.t0" 340 0 "a_7570_1796.t2" 340 0
+device msubckt sky130_fd_pr__nfet_01v8 6990 750 6991 751  "Vn" "a_6890_1010.t3" 1600 0 "a_6890_750.t2" 160 0 "Vn.t3" 160 0
