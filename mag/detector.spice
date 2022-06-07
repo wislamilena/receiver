@@ -1,0 +1,32 @@
+* NGSPICE file created from detector.ext - technology: sky130A
+
+.subckt detector din db do GND
+X0 din.t0 nd sky130_fd_pr__cap_mim_m3_2 l=8.7e+07u w=8.7e+07u
+X1 do.t1 GND.t0 sky130_fd_pr__cap_mim_m3_2 l=2.2e+07u w=2.2e+07u
+X2 do.t0 nd GND sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X3 GND.t1 db.t0 nd GND sky130_fd_pr__nfet_01v8 w=9e+06u l=150000u
+R0 din din.t0 0.035
+R1 do.n0 do.t0 9.629
+R2 do.t1 do 0.177
+R3 do.n0 do.t1 0.09
+R4 rc do.n0 0.006
+R5 GND.n8 GND 77.897
+R6 GND.n9 GND.n8 8.872
+R7 GND.n7 GND.n6 8.872
+R8 GND.n4 GND.n3 8.872
+R9 nbs GND.n11 7.997
+R10 GND.n10 GND.t1 3.4
+R11 nbs GND.n1 0.887
+R12 GND GND.t0 0.061
+R13 GND.n10 GND.n9 0.019
+R14 GND.n6 GND.n5 0.019
+R15 GND.n10 GND.n7 0.019
+R16 GND.n10 GND.n4 0.019
+R17 GND.n1 GND.n0 0.019
+R18 GND.n3 GND.n2 0.019
+R19 GND.n11 GND.n10 0.008
+R20 db db.t0 1552.66
+C0 db nd 0.48fF
+*C1 din nd nanfF
+.ends
+

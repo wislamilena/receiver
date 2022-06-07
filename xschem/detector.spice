@@ -1,11 +1,18 @@
-** sch_path: /home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/detector.sch
-.subckt detector din dB do gnd Vsub
-*.PININFO din:I dB:I do:O gnd:I Vsub:I
-XM1 net1 dB gnd Vsub sky130_fd_pr__nfet_01v8 L=0.15 W=22.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* expanding   symbol:  /home/wisla/sky130_skel/Myschematics/detectorPassivo.sym # of pins=4
+** sym_path: /home/wisla/sky130_skel/Myschematics/detectorPassivo.sym
+** sch_path: /home/wisla/sky130_skel/Myschematics/detectorPassivo.sch
+.subckt detector din dB GND do
+*.ipin din
+*.ipin dB
+*.opin do
+*.iopin gnd
+XM1 net1 dB GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XC1 do gnd sky130_fd_pr__cap_mim_m3_1 W=87 L=87 MF=1 m=1
-XC2 din net1 sky130_fd_pr__cap_mim_m3_1 W=87 L=87 MF=1 m=1
-XR2 net1 do Vsub sky130_fd_pr__res_xhigh_po W=0.35 L=18.6 mult=1 m=1
+XC3 do GND sky130_fd_pr__cap_mim_m3_2 W=22 L=22 VM=1 m=1
+XR2 do net1 gnd sky130_fd_pr__res_xhigh_po W=0.35 L=17.5 mult=1 m=1
+XC1 din net1 sky130_fd_pr__cap_mim_m3_2 W=87 L=87 VM=1 m=1
 .ends
+
+.GLOBAL GND
 .end

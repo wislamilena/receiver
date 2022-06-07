@@ -4,28 +4,26 @@ K {}
 V {}
 S {}
 E {}
-N 3460 -360 3560 -360 { lab=io_analog[3]}
-N 3480 -320 3560 -320 {
-lab=vccd2}
-N 3460 -340 3560 -340 { lab=io_analog[1]}
-N 3860 -330 3990 -330 {
-lab=io_analog[2]}
-N 3730 140 3730 180 {
-lab=vccd2}
-N 3730 -30 3730 20 {
-lab=vccd1}
-N 3820 70 3860 70 {
-lab=io_analog[7]}
-N 3820 90 3860 90 {
-lab=vssa2}
-N 3590 60 3690 60 {
-lab=io_analog[10]}
-N 3590 80 3690 80 {
-lab=io_analog[9]}
-N 3590 100 3690 100 {
+N 3730 -90 3770 -90 {
+lab=io_analog[5]}
+N 3540 -110 3640 -110 {
 lab=io_analog[8]}
-N 3520 -300 3560 -300 {
-lab=vssa1}
+N 3540 -90 3640 -90 {
+lab=io_analog[7]}
+N 3540 -70 3640 -70 {
+lab=io_analog[6]}
+N 3550 -340 3630 -340 {
+lab=io_analog[10]}
+N 3550 -320 3630 -320 {
+lab=gpio_analog[7]}
+N 3720 -330 3790 -330 {
+lab=io_analog[9]}
+N 3680 -300 3680 -250 {
+lab=vssa2}
+N 3680 -60 3680 -20 {
+lab=vssa2}
+N 3680 -170 3680 -110 {
+lab=vccd2}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -58,17 +56,15 @@ C {devices/iopin.sym} 3250 500 0 0 {name=p30 lab=io_clamp_high[2:0]}
 C {devices/iopin.sym} 3250 530 0 0 {name=p31 lab=io_clamp_low[2:0]}
 C {devices/opin.sym} 3270 600 0 0 {name=p32 lab=user_irq[2:0]}
 C {devices/ipin.sym} 3290 210 0 0 {name=p28 lab=la_oenb[127:0]}
-C {devices/lab_pin.sym} 3460 -360 0 0 {name=l1 sig_type=std_logic lab=io_analog[3]}
-C {devices/lab_pin.sym} 3990 -330 0 1 {name=l3 sig_type=std_logic lab=io_analog[2]}
-C {devices/lab_pin.sym} 3460 -340 0 0 {name=l4 sig_type=std_logic lab=io_analog[1]}
-C {detector.sym} 3710 -330 0 0 {name=Xdet}
-C {devices/lab_pin.sym} 3590 60 0 0 {name=l5 sig_type=std_logic lab=io_analog[10]}
-C {devices/lab_pin.sym} 3590 80 0 0 {name=l6 sig_type=std_logic lab=io_analog[9]}
-C {devices/lab_pin.sym} 3860 70 2 0 {name=l7 sig_type=std_logic lab=io_analog[7]}
-C {devices/lab_pin.sym} 3590 100 0 0 {name=l8 sig_type=std_logic lab=io_analog[8]}
-C {devices/lab_pin.sym} 3730 -20 0 0 {name=l9 sig_type=std_logic lab=vccd1}
-C {devices/lab_pin.sym} 3730 170 0 0 {name=l10 sig_type=std_logic lab=vccd2}
-C {OTA.sym} 3840 80 0 0 {name=X1}
-C {devices/lab_pin.sym} 3860 90 2 0 {name=l11 sig_type=std_logic lab=vssa2}
-C {devices/lab_pin.sym} 3480 -320 2 1 {name=l2 sig_type=std_logic lab=vccd2}
-C {devices/lab_pin.sym} 3520 -300 2 1 {name=l12 sig_type=std_logic lab=vssa1}
+C {devices/lab_pin.sym} 3550 -340 0 0 {name=l1 sig_type=std_logic lab=io_analog[10]}
+C {devices/lab_pin.sym} 3790 -330 0 1 {name=l3 sig_type=std_logic lab=io_analog[9]}
+C {devices/lab_pin.sym} 3540 -110 0 0 {name=l5 sig_type=std_logic lab=io_analog[8]}
+C {devices/lab_pin.sym} 3540 -90 0 0 {name=l6 sig_type=std_logic lab=io_analog[7]}
+C {devices/lab_pin.sym} 3770 -90 2 0 {name=l7 sig_type=std_logic lab=io_analog[5]}
+C {devices/lab_pin.sym} 3540 -70 0 0 {name=l8 sig_type=std_logic lab=io_analog[6]}
+C {devices/lab_pin.sym} 3680 -160 0 0 {name=l9 sig_type=std_logic lab=vccd2}
+C {devices/lab_pin.sym} 3680 -260 2 1 {name=l12 sig_type=std_logic lab=vssa2}
+C {detectorPassivo.sym} 3540 -360 0 0 {name=X1}
+C {OTA.sym} 3530 -90 0 0 {name=X2}
+C {devices/lab_pin.sym} 3680 -20 2 1 {name=l2 sig_type=std_logic lab=vssa2}
+C {devices/lab_pin.sym} 3550 -320 0 0 {name=l4 sig_type=std_logic lab=gpio_analog[7]  }
