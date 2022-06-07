@@ -90,29 +90,29 @@
 *+ wbs_dat_o[31:0]:O la_data_in[127:0]:I la_data_out[127:0]:O io_in[26:0]:I io_in_3v3[26:0]:I user_clock2:I
 *+ io_out[26:0]:O io_oeb[26:0]:O gpio_analog[17:0]:B gpio_noesd[17:0]:B io_analog[10:0]:B io_clamp_high[2:0]:B
 *+ io_clamp_low[2:0]:B user_irq[2:0]:O la_oenb[127:0]:I
-Xdet io_analog[3] io_analog[2] io_analog[1] vccd2 vssa1 detector
-X1 vccd1 io_analog[7] io_analog[10] vssa2 io_analog[9] io_analog[8] vccd2 OTA
+X1 io_analog[10] gpio_analog[7] vssa2 io_analog[9] detectorPassivo
+X2 vccd2 vssa2 io_analog[6] io_analog[5] io_analog[7] io_analog[8] OTA
 .ends
 
-* expanding   symbol:  detector.sym # of pins=5
-** sym_path: /home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/detector.sym
-** sch_path: /home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/detector.sch
-.subckt detector  din do dB Vsub gnd
-*.PININFO din:I dB:I do:O gnd:I Vsub:I
-XM1 net1 dB gnd Vsub sky130_fd_pr__nfet_01v8 L=0.15 W=22.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* expanding   symbol:  detectorPassivo.sym # of pins=4
+** sym_path: /home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/detectorPassivo.sym
+** sch_path: /home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/detectorPassivo.sch
+.subckt detectorPassivo  din dB gnd do
+*.PININFO din:I dB:I do:O gnd:B
+XM1 net1 dB gnd gnd sky130_fd_pr__nfet_01v8 L=0.15 W=9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XC1 do gnd sky130_fd_pr__cap_mim_m3_1 W=87 L=87 MF=1 m=1
-XC2 din net1 sky130_fd_pr__cap_mim_m3_1 W=87 L=87 MF=1 m=1
-XR2 net1 do Vsub sky130_fd_pr__res_xhigh_po W=0.35 L=18.6 mult=1 m=1
+XC3 do gnd sky130_fd_pr__cap_mim_m3_2 W=22 L=22 VM=1 m=1
+XR2 do net1 gnd sky130_fd_pr__res_xhigh_po W=0.35 L=17.5 mult=1 m=1
+XC1 din net1 sky130_fd_pr__cap_mim_m3_2 W=87 L=87 VM=1 m=1
 .ends
 
 
-* expanding   symbol:  OTA.sym # of pins=7
+* expanding   symbol:  OTA.sym # of pins=6
 ** sym_path: /home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/OTA.sym
 ** sch_path: /home/wisla/sky130_skel/Myschematics/Receptor/receiver/xschem/OTA.sch
-.subckt OTA  Vp vout ib cltop inp inn Vn
-*.PININFO inp:I inn:I vout:O ib:I cltop:O Vp:I Vn:I
+.subckt OTA  Vp Vn ib vout inp inn
+*.PININFO inp:I inn:I vout:O Vp:B Vn:B ib:I
 XM7 net1 net1 Vp Vp sky130_fd_pr__pfet_01v8 L=1 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
@@ -143,7 +143,6 @@ XM6 vout net3 Vn Vn sky130_fd_pr__nfet_01v8 L=4 W=0.8 nf=1 ad='int((nf+1)/2) * W
 XM5 net1 net2 Vn Vn sky130_fd_pr__nfet_01v8 L=4 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XC1 cltop vout sky130_fd_pr__cap_mim_m3_1 W=32 L=32 MF=1 m=1
 .ends
 
 .end

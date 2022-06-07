@@ -21,4 +21,4 @@
 # includes used by the testbench simulation are picked up.  Otherwise, the LVS
 # itself compares just the simple_por subcircuit from the testbench.
 #--------------------------------------------------------------------------------
-netgen -batch lvs "../xschem/detector.spice detector" "detV2.spice detV2"
+netgen -batch lvs "../xschem/detector.spice detector" "detector.spice detector"

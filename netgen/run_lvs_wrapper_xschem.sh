@@ -19,4 +19,4 @@
 # top-level xschem subcircuit from the wrapper testbench.
 #
 #--------------------------------------------------------------------------------
-netgen -batch lvs "user_analog_project_wrapper.spice user_analog_project_wrapper" "../xschem/user_analog_project_wrapper.spice user_analog_project_wrapper" 
+netgen -batch lvs "../xschem/user_analog_project_wrapper.spice user_analog_project_wrapper" "user_analog_project_wrapper.spice user_analog_project_wrapper"
