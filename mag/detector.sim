@@ -1,0 +1,12 @@
+| units: 500000 tech: sky130A format: MIT
+x din nd l=17400 w=17400 x=-17001 y=-4027 sky130_fd_pr__cap_mim_m3_2
+x do GND l=4400 w=4400 x=3710 y=-149 sky130_fd_pr__cap_mim_m3_2
+x a_2690_398# do nd GND l=3500 w=70 x=2690 y=398 sky130_fd_pr__res_xhigh_po
+x db nd GND GND l=30 w=1800 x=2246 y=1280 sky130_fd_pr__nfet_01v8
+C nd din nan
+R do 131
+C db GND 5.91
+R db 2491
+R GND 7783
+R a_2690_398# 100000
+R nd 3710

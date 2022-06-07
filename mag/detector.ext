@@ -1,0 +1,30 @@
+timestamp 1654529013
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w
+parameters sky130_fd_pr__res_xhigh_po l=l w=w
+parameters sky130_fd_pr__res_xhigh_po_5p73 l=l
+parameters sky130_fd_pr__res_xhigh_po_2p85 l=l
+parameters sky130_fd_pr__res_xhigh_po_1p41 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p69 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p35 l=l
+parameters sky130_fd_pr__cap_mim_m3_2 w=w l=l
+port "din" 1 -19580 2548 -18152 6054 m5
+port "do" 3 8126 -84 8378 246 m5
+port "db" 2 8330 -780 8516 -516 m4
+port "GND" 4 8116 4748 8370 4972 m4
+node "din" 0 -nan -19580 2548 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49970000 29988 0 0
+node "do" 131 -nan 8126 -84 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 264276 3676 168544 1652 168544 1652 168544 1652 168544 1652 3055488 12304 0 0
+node "a_2690_398#" 100000 0 2690 398 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 245000 7140 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "db" 2491 5914.46 8330 -780 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100716 4632 0 0 43896 844 43896 844 43896 844 43896 844 631740 16872 0 0 0 0
+node "nd" 3710 -nan 2170 1280 ndif 0 0 0 0 0 0 0 0 136800 3752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 298908 9348 50600 1140 50600 1140 50600 1140 401175828 80364 0 0 0 0
+substrate "GND" 0 0 8116 4748 m4 0 0 0 0 0 0 0 0 136800 3752 136800 3752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 219012 4608 12312 444 12312 444 765996 15828 24411720 20708 0 0 0 0
+cap "din" "nd" -nan
+cap "db" "nd" 477.109
+device csubckt sky130_fd_pr__cap_mim_m3_2 3710 -150 3711 -149 w=4400 l=4400 "None" "do" 4436 0 "GND" 1000 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 -17002 -4028 -17001 -4027 w=17400 l=17400 "None" "din" 12196 0 "nd" 1000 0
+device rsubckt sky130_fd_pr__res_xhigh_po 2690 398 2691 399 l=3500 w=70 "GND" "a_2690_398#" 0 0 "do" 70 0 "nd" 70 0
+device msubckt sky130_fd_pr__nfet_01v8 2246 1280 2247 1281 l=30 w=1800 "GND" "db" 60 0 "nd" 1800 0 "GND" 1800 0

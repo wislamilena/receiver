@@ -1,0 +1,51 @@
+scale 1000 1 500000
+rnode "db.t0" 0 274.123 2261 2180 0
+rnode "db" 0 5635.88 8330 -780 0
+resist "db" "db.t0" 1552.66
+rnode "GND.n0" 0 0 2381 2416 0
+rnode "GND.n1" 0 0 2381 2416 0
+rnode "GND.t1" 0 0 2276 2180 0
+rnode "GND.n2" 0 0 2381 2616 0
+rnode "GND.n3" 0 0 2381 2616 0
+rnode "GND.n4" 0 0 2327 2536 0
+rnode "GND.n5" 0 0 2381 2816 0
+rnode "GND.n6" 0 0 2381 2816 0
+rnode "GND.n7" 0 0 2327 2736 0
+rnode "GND.t0" 0 0 5910 2050 0
+rnode "GND" 0 0 8116 4748 0
+rnode "GND.n8" 0 0 2381 3016 0
+rnode "GND.n9" 0 0 2327 2936 0
+rnode "GND.n10" 0 0 2327 2936 0
+rnode "GND.n11" 0 0 2327 2336 0
+rnode "nbs" 0 0 2300 2408 0
+resist "GND.n11" "GND.n10" 0.00802672
+resist "GND.n3" "GND.n2" 0.019
+resist "GND.n1" "GND.n0" 0.019
+resist "GND.n10" "GND.n4" 0.019
+resist "GND.n10" "GND.n7" 0.019
+resist "GND.n6" "GND.n5" 0.019
+resist "GND.n10" "GND.n9" 0.019
+resist "GND" "GND.t0" 0.061
+resist "nbs" "GND.n1" 0.887
+resist "GND.n10" "GND.t1" 3.4
+resist "nbs" "GND.n11" 7.99696
+resist "GND.n4" "GND.n3" 8.872
+resist "GND.n7" "GND.n6" 8.872
+resist "GND.n9" "GND.n8" 8.872
+resist "GND.n8" "GND" 77.897
+rnode "do.t0" 0 0 2725 134 0
+rnode "do" 0 0 8126 -84 0
+rnode "do.t1" 0 0 4725 124 0
+rnode "do.n0" 0 0 3032 115 0
+rnode "rc" 0 0 2930 -50 0
+resist "rc" "do.n0" 0.006
+resist "do.n0" "do.t1" 0.09
+resist "do.t1" "do" 0.177
+resist "do.n0" "do.t0" 9.629
+rnode "din.t0" 0 nan -13496 4517 0
+rnode "din" 0 nan -19580 2548 0
+resist "din" "din.t0" 0.035
+device msubckt sky130_fd_pr__nfet_01v8 2246 1280 2247 1281  "GND" "db.t0" 60 0 "nd" 1800 0 "GND.t1" 1800 0
+device rsubckt sky130_fd_pr__res_xhigh_po 2690 398 2691 399  "GND" "a_2690_398#" 140 0 "do.t0" 3500 0 "nd" 3500 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 3710 -150 3711 -149  "None" "do.t1" 19072 0 "GND.t0" -6708 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 -17002 -4028 -17001 -4027  "None" "din.t0" 81896 0 "nd" -25492 0
