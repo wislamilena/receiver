@@ -1,0 +1,2 @@
+2022-06-08 02:52:28 - [INFO] - {{EXTRACTING FILES}} Extracting compressed files in: /home/wisla/sky130_skel/Myschematics/Receptor/receiver
+2022-06-08 02:52:28 - [CRITICAL] - {{IDENTIFYING PROJECT TYPE FAILED}} A single valid GDS was not found. If your project is digital, a GDS file should exist under the project's 'gds' directory named 'user_project_wrapper(.gds/.gds.gz)'. If your project is analog, a GDS file should exist under the project's 'gds' directory named 'user_analog_project_wrapper(.gds/.gds.gz)'.
