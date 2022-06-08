@@ -4,11 +4,6 @@ K {}
 V {}
 S {}
 E {}
-T {Resistencia de 250K considerando um resistor de largura fixa de 0,35um;
-O capacitor do filtro passa baixas possui um valor de 4pF; 
-Logo, a frequencia de corte é 150KHz.
-O filtro capacitivo na entrada possui uma capacitancia de 590fF. 
-E para uma frequencia abaixo de 150K, possui uma impedancia na ordem de M ohm.} -50 -210 0 0 0.2 0.2 {}
 N 130 90 130 110 { lab=gnd}
 N 130 110 130 140 { lab=gnd}
 N 130 60 220 60 { lab=gnd}
@@ -47,11 +42,10 @@ C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} -50 -10 0 0 {name
 C {/edatools/opentools/xschem/xschem_library/devices/ipin.sym} 60 60 0 0 {name=p3 lab=dB}
 C {/edatools/opentools/xschem/xschem_library/devices/opin.sym} 410 -10 0 0 {name=p2 lab=do}
 C {/edatools/opentools/xschem/xschem_library/devices/iopin.sym} 240 150 1 0 {name=p4 lab=gnd}
-C {/home/wisla/sky130_skel/xschem_sky130/sky130_fd_pr/cap_mim_m3_2.sym} 350 80 0 0 {name=C3 model=cap_mim_m3_2 W=22 L=22 MF=1 spiceprefix=X}
 C {/home/wisla/sky130_skel/xschem_sky130/sky130_fd_pr/res_xhigh_po.sym} 230 -10 3 0 {name=R2
 W=0.35
 L=17.5
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
-C {/home/wisla/sky130_skel/xschem_sky130/sky130_fd_pr/cap_mim_m3_2.sym} 20 -10 3 0 {name=C1 model=cap_mim_m3_2 W=87 L=87 MF=1 spiceprefix=X}
+C {/home/wisla/sky130_skel/xschem_sky130/sky130_fd_pr/cap_mim_m3_2.sym} 20 -10 3 0 {name=C2 model=cap_mim_m3_2 W=87 L=87 MF=1 spiceprefix=X}
