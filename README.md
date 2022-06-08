@@ -10,7 +10,4 @@
  The design implementation was based on the repository [caravel_user_project_analog](https://github.com/efabless/caravel_user_project_analog.git). 
 
 
-
-
 Refer to [README](docs/source/index.rst) for this sample project documentation. 
-# receiver
